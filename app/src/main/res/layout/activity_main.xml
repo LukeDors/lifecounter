@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="60dp"
+        android:text="Player1"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="@string/plus"
+        app:layout_constraintTop_toBottomOf="@+id/player1"
+        app:layout_constraintLeft_toLeftOf="@+id/player1"/>
+
+    <Button
+        android:id="@+id/minusBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="@string/minus"
+        app:layout_constraintLeft_toRightOf="@+id/plusBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <Button
+        android:id="@+id/plusFiveBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="@string/plusFive"
+        app:layout_constraintLeft_toRightOf="@+id/minusBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+        <Button
+        android:id="@+id/minusFiveBtn1"
+        android:text="@string/minusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player1"
+        app:layout_constraintLeft_toRightOf="@+id/plusFiveBtn1"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <EditText
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:height="60dp"
+        android:text="Player2"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/player1"
+        app:layout_constraintRight_toRightOf="@id/player1"
+        app:layout_constraintTop_toBottomOf="@id/player1" />
+
+        <Button
+        android:id="@+id/plusBtn2"
+        android:text="@string/plus"
+        app:layout_constraintTop_toBottomOf="@+id/player2"
+        app:layout_constraintLeft_toLeftOf="@+id/player2"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusBtn2"
+        android:text="@string/minus"
+        app:layout_constraintTop_toBottomOf="@+id/player2"
+        app:layout_constraintLeft_toRightOf="@+id/plusBtn2"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/plusFiveBtn2"
+        android:text="@string/plusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player2"
+        app:layout_constraintLeft_toRightOf="@+id/minusBtn2"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusFiveBtn2"
+        android:text="@string/minusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player2"
+        app:layout_constraintLeft_toRightOf="@+id/plusFiveBtn2"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <EditText
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:height="60dp"
+        android:text="Player3"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/player2"
+        app:layout_constraintRight_toRightOf="@id/player2"
+        app:layout_constraintTop_toBottomOf="@id/player2" />
+
+    <Button
+        android:id="@+id/plusBtn3"
+        android:text="@string/plus"
+        app:layout_constraintTop_toBottomOf="@+id/player3"
+        app:layout_constraintLeft_toLeftOf="@+id/player3"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusBtn3"
+        android:text="@string/minus"
+        app:layout_constraintTop_toBottomOf="@+id/player3"
+        app:layout_constraintLeft_toRightOf="@+id/plusBtn3"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/plusFiveBtn3"
+        android:text="@string/plusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player3"
+        app:layout_constraintLeft_toRightOf="@+id/minusBtn3"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusFiveBtn3"
+        android:text="@string/minusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player3"
+        app:layout_constraintLeft_toRightOf="@+id/plusFiveBtn3"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <EditText
+        android:id="@+id/player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:height="60dp"
+        android:text="Player4"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/player3"
+        app:layout_constraintRight_toRightOf="@id/player3"
+        app:layout_constraintTop_toBottomOf="@id/player3" />
+
+    <Button
+        android:id="@+id/plusBtn4"
+        android:text="@string/plus"
+        app:layout_constraintTop_toBottomOf="@+id/player4"
+        app:layout_constraintLeft_toLeftOf="@+id/player4"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusBtn4"
+        android:text="@string/minus"
+        app:layout_constraintTop_toBottomOf="@+id/player4"
+        app:layout_constraintLeft_toRightOf="@+id/plusBtn4"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/plusFiveBtn4"
+        android:text="@string/plusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player4"
+        app:layout_constraintLeft_toRightOf="@+id/minusBtn4"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/minusFiveBtn4"
+        android:text="@string/minusFive"
+        app:layout_constraintTop_toBottomOf="@+id/player4"
+        app:layout_constraintLeft_toRightOf="@+id/plusFiveBtn4"
+        android:layout_marginTop="5dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <EditText
+        android:id="@+id/loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="No Players Lost"
+        app:layout_constraintTop_toBottomOf="@id/plusFiveBtn4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/lives1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="@+id/player1"
+        app:layout_constraintLeft_toRightOf="@+id/player1"
+        app:layout_constraintTop_toTopOf="@+id/player1" />
+
+    <EditText
+        android:id="@+id/lives2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="@+id/player2"
+        app:layout_constraintLeft_toRightOf="@+id/player2"
+        app:layout_constraintTop_toTopOf="@+id/player2" />
+
+    <EditText
+        android:id="@+id/lives3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="@+id/player3"
+        app:layout_constraintLeft_toRightOf="@+id/player3"
+        app:layout_constraintTop_toTopOf="@+id/player3" />
+
+    <EditText
+        android:id="@+id/lives4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="@+id/player4"
+        app:layout_constraintLeft_toRightOf="@+id/player4"
+        app:layout_constraintTop_toTopOf="@+id/player4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
